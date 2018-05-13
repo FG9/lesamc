@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": " ",
+  "info": {
+    "name": "about",
+    "description": "about page content "
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "about-title": {
+      "multiple": false,
+      "type": "string"
+    },
+    "about-content": {
+      "multiple": false,
+      "type": "text"
+    },
+    "about-images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "about-email": {
+      "multiple": false,
+      "type": "email"
+    }
+  }
+}

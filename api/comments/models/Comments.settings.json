@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "comments",
+    "description": "blog comments"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "reply": {
+      "multiple": false,
+      "type": "text"
+    },
+    "blog": {
+      "model": "blog",
+      "via": "comments",
+      "dominant": true
+    }
+  }
+}

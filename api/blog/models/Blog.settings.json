@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "blog",
+  "info": {
+    "name": "blog",
+    "description": "Updates"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "multiple": false,
+      "type": "string"
+    },
+    "Body": {
+      "multiple": false,
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "author": {
+      "model": "user",
+      "via": "blogs",
+      "plugin": "users-permissions"
+    },
+    "comments": {
+      "collection": "comments",
+      "via": "blog"
+    }
+  }
+}

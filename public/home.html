@@ -1,0 +1,19 @@
+
+
+<div class="uk-section" ng-controller="blog">
+    <script type="text/javascript">
+console.log(blog);
+</script>
+    <div class="uk-container">
+        <div class="uk-panel" ng-repeat="x in blog">
+               <script type="text/javascript">
+console.log(x);
+</script>
+            <img class="uk-align-left uk-margin-remove-adjacent " ng-src="{{x.image.url}}" width="225" height"150" alt="Example image">
+            <p class="uk-article-title">{{ x.Title }}</p>
+            <p class="uk-article-meta">Posted by {{x.author.username}}, on {{x.createdAt | date : "fullDate" }}</p>                       
+            <p> {{ x.Body }}</p>
+        </div>
+    </div>
+</div>
+

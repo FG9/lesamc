@@ -1,0 +1,14 @@
+
+<script type="text/javascript">
+console.log(about);
+</script>
+
+
+<div  class="uk-panel" ng-repeat="x in about">
+    <script type="text/javascript">
+console.log(x);
+</script>
+    <h1 class="uk-article-title">About {{ x.about-title }}</h1>
+    <img class=" uk-align-center uk-border-circle" ng-src="{{x.about-images.url}}" width="200" height="200" alt="Border circle" />
+    <p> {{ x.about-content }}</p>
+</div>

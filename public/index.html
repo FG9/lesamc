@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesa McIntosh</title>
+          <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+  </head>
+  <body>
+      <div class="uk-container">
+      <nav class="uk-navbar-transparent" data-uk-navbar>
+						<div class="uk-navbar-left">
+							<a class="uk-navbar-item uk-logo" href="#"><img src="uploads/lesamcLogo.gif" /> </a>
+						</div>
+						<div class="uk-navbar-center uk-visible@m">
+							<ul class="uk-navbar-nav">
+								<li class="uk-active"><a href="#home">Home</a></li>
+								<li>
+									<a href="#services">Services <span data-uk-icon="icon: triangle-down"></span></a>
+									<div class="uk-navbar-dropdown">
+										<ul class="uk-nav uk-navbar-dropdown-nav">
+											<li><a href="#">Estate Planning</a></li>
+											<li><a href="#">Trusts</a></li>
+											<li><a href="#">Wills</a></li>
+											<li><a href="#">Probate</a></li>
+											
+										</ul>
+									</div>
+								</li>
+								<li><a href="#about" >About</a></li>
+							</ul>
+						</div>
+						<div class="uk-navbar-right">
+							<ul class="uk-navbar-nav">
+								<li>
+									<a href="#" data-uk-icon="icon:user"></a>
+									<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
+										<ul class="uk-nav uk-navbar-dropdown-nav">
+											<li class="uk-nav-header uk-text-small uk-text-primary">YOUR ACCOUNT</li>
+											<li><a href="#"><span data-uk-icon="icon: info"></span> Summary</a></li>
+											<li><a href="#"><span data-uk-icon="icon: refresh"></span> Edit</a></li>
+											<li><a href="#"><span data-uk-icon="icon: settings"></span> Configuration</a></li>
+											<li class="uk-nav-divider"></li>
+											<li><a href="#"><span data-uk-icon="icon: image"></span> Your Pictures</a></li>
+											<li class="uk-nav-divider"></li>
+											<li><a href="#"><span data-uk-icon="icon: sign-out"></span> Logout</a></li>
+											
+										</ul>
+									</div>
+								</li>
+								<li class="uk-hidden@m"><a class="uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a></li>
+							</ul>
+						</div>
+					</nav>
+      </div>
+         <div class="uk-inline">
+            <img class="" src="../uploads/lesa cover.png" alt="">                      
+        </div>  
+      <div class="uk-container" ng-app="lesa"> 
+          <div class="ng-view"></div>
+          
+      </div>      
+   <script src="app.js"></script>
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+  </body>
+</html>
